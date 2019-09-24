@@ -31,6 +31,7 @@ body {
 
 img {
     width: 100%;
+    margin: auto;
 }
 
 .card-front, .card-back {
@@ -39,6 +40,7 @@ img {
     height: 100%;
     backface-visibility: hidden;
     padding: 20px;
+    display: flex;
 }
 
 .card-front {
