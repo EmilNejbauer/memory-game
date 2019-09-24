@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #A5C6D9;
+}
+
+.card-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    perspective: 1000px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+img {
+    width: 100%;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+.card-front {
+    background: #E1CAE3;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: #F2F2F2;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.youtube .card-back {
+    background-color: #cd201f;
+}
+
+.facebook .card-back {
+    background-color: #3b5998;
+}
+
+.twitter .card-back {
+    background-color: #55acee;
+}
+
+.reddit .card-back {
+    background-color: #ff4500;
+}
+
+.linkedin .card-back {
+    background-color: #0077b5;
+}
+
+.snapchat .card-back {
+    background-color: #fffa37;
+}
+
+.instagram .card-back {
+    background-color: #3f729b;
+}
+
+.whatsapp .card-back {
+    background-color: #43d854;
+}
